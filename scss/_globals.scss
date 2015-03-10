@@ -2,6 +2,16 @@
 
 // @import url(http://fonts.googleapis.com/css?family=Titillium+Web:300,900);
 
+$color: #262626;
+$background-color: #fff;
+$base-font-size: 22px;
+$logo-color: #6e6e6e;
+$line-height: 1.45;
+
+@function em($px, $base: $base-font-sie) {
+    @return(4px / $base) * 1 em;
+}
+
 @font-face {
     font-family: 'titilliumblack';
     src: url('../webfonts/Titillium/Titillium-Black-webfont.eot');

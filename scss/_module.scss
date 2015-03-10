@@ -1,1 +1,29 @@
 /* Module.scss */
+
+nav[role="navigation"] ul {
+    background-color: $color;
+    list-style-type: none;
+    margin: 0 20px 0 0;
+    padding: 0 8px 4px 8px;
+}
+
+nav[role="navigation"] ul li {
+    display: inline-block;
+    margin: 0 0 0 8px;
+    padding: 0;
+}
+
+nav[role="navigation"] a {
+    color: #fff;
+    font-size: 18px;
+    transition: color 300ms linear;
+    &:hover{
+        color: darken(#fff, 30%);
+        transition: color 300ms linear;
+    }
+} 
+
+nav[role="navigation"] a:hover {
+    color: darken(#fff, 30%);
+    transition: color 300ms linear;
+}
