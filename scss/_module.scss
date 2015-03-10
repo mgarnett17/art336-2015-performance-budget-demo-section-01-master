@@ -23,7 +23,20 @@ nav[role="navigation"] a {
     }
 } 
 
-nav[role="navigation"] a:hover {
-    color: darken(#fff, 30%);
-    transition: color 300ms linear;
+header[role="banner"] svg {
+    fill: $color;
+}
+
+.place-mark {
+    fill: $logo-color;
+}
+
+.cafe h1 svg, .food h1 svg, .attractons h1 svg {
+    height: em(16px);
+    fill: $color;
+    margin-right: em(6px)
+}
+
+.cafe h1, .food h1, .attractons h1 {
+    font-size: em(70px);
 }

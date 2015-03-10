@@ -371,9 +371,12 @@ th {
   font-style: normal; }
 /* Base.scss */
 body {
+  background-color: #fff;
+  color: #262626;
   font-family: 'titilliumlight', 'helvetica', 'verdana', sans-serif;
   font-weight: normal;
   font-style: normal;
+  font-size: 22px;
   margin: 0 auto;
   max-width: 600px;
   width: 100%; }
@@ -384,9 +387,23 @@ img {
 h1, h2, h3 {
   font-family: 'titilliumblack', 'helvetica', 'verdana', sans-serif;
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+  line-height: 1; }
 
 /* Layout.scss */
+nav[role="navigation"] {
+  max-width: 600px;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 100%; }
+
+header[role="banner"] {
+  margin: 100px 0 140px 0; }
+
+.cafe, .food {
+  margin-bottom: 4.54545em; }
+
 /* Module.scss */
 nav[role="navigation"] ul {
   background-color: #262626;
@@ -407,9 +424,19 @@ nav[role="navigation"] a {
     color: #b3b3b3;
     transition: color 300ms linear; }
 
-nav[role="navigation"] a:hover {
-  color: #b3b3b3;
-  transition: color 300ms linear; }
+header[role="banner"] svg {
+  fill: #262626; }
+
+.place-mark {
+  fill: #6e6e6e; }
+
+.cafe h1 svg, .food h1 svg, .attractons h1 svg {
+  height: 0.72727em;
+  fill: #262626;
+  margin-right: 0.27273em; }
+
+.cafe h1, .food h1, .attractons h1 {
+  font-size: 3.18182em; }
 
 /* State.scss */
 /* Theme.scss */

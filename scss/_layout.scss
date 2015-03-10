@@ -1,1 +1,20 @@
 /* Layout.scss */
+
+nav[role="navigation"] {
+    max-width: 600px;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    // bottom: 0;
+    // left: 0;
+    // right: 0;
+    width: 100%;
+}
+
+header[role="banner"] {
+    margin: 100px 0 140px 0;
+}
+
+.cafe, .food {
+    margin-bottom: em(100px);
+}
