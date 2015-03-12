@@ -2,12 +2,25 @@
 
 body {
     background-color: $background-color;
+    box-sizing: border-box;
     color: $color;
     @include body-font-light;
     font-size: $base-font-size;
     margin: 0 auto;
     max-width: 600px;
+    padding: 0 10px;
+    overflow: hidden;
     width: 100%;
+}
+
+@media screen and  (min-width: 000px){
+    body {
+        color: pink;
+    }
+    .cafe h1, .food h1, .attractons h1, 
+    .cafe h2, .food h2, .attractons h2 {
+        font-size: em(70px);
+    }
 }
 
 img {
@@ -17,4 +30,12 @@ img {
 h1, h2, h3 {
     @include headline-font;
     line-height: 1;
+    overflow: hidden;
+}
+
+a {
+    transition: color 300ms linear;
+    &:hover {
+        transition: color 300ms linear;
+    }
 }

@@ -37,6 +37,113 @@ header[role="banner"] svg {
     margin-right: em(6px)
 }
 
-.cafe h1, .food h1, .attractons h1 {
+.cafe h1, .food h1, .attractons h1, 
+.cafe h2, .food h2, .attractons h2 {
     font-size: em(70px);
 }
+
+.cafe h1 a, .food h1 a, .attractions h1 a 
+.cafe h2 a, .food h2 a, .attractions h2 a{
+    color: $logo-color;
+    transition: color 300ms linear;
+    &:hover {
+        color: darken($logo-color,8%);
+        transition: color 300ms linear;
+    }
+}
+
+.cafe-location, .food-location, .attraction-location {
+    margin-bottom: em(370px);
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+//.cafe-location:last-of-type, .food-location:last-of-type, 
+//.attraction-location:last-of-type {
+//    margin-bottom: 0;
+//}
+
+.street-address:before {
+    content: "a. ";
+    @include headline-font;
+}
+
+abbr[title] {
+    border-bottom: none;
+}
+
+.tel {
+    display: block;
+    &:before {
+        content: "p. ";
+        @include headline-font;
+    }
+}
+    
+footer[role="contentinfo"] {
+    background-color: $color;
+    color: #fff;
+    font-size: 18px;
+    padding: 8px
+}
+
+footer[role="contentinfo"] ul + h2 {
+    margin-top: em(22px);
+}
+
+footer[role="contentinfo"] ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer[role="contentinfo"] ul li {
+    display: inline-block;
+    margin: 0 4px 0 0;
+    padding: 0;
+}
+
+footer[role="contentinfo"] a {
+    color: #fff;
+    transition: color 300ms linear;
+    &:hover {
+        color: darken(#fff,30%);
+        transition: color 300ms linear;
+    }
+}
+
+.loading-icon {
+    max-width: 200px;
+    width: 100%;
+}
+    
+p[data-lazy-load] {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
